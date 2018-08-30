@@ -2,3 +2,10 @@
     width: 1383px;
     margin-left: auto;
 }
+.title-header-image {
+    // colocar la imagen hacia abajo
+   margin-top: 186.69px;
+   & img {
+    margin-left: 4px;
+   }
+}

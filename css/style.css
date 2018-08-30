@@ -416,26 +416,58 @@ html.debug body {
   opacity: 0.7;
 }
 
-.debug-header h2 {
-  font-size: 23px;
+.serie-description-header h2 {
+  font-size: 22px;
+  letter-spacing: 0.22px;
+  line-height: 26px;
   margin-bottom: 0;
 }
-.debug-header p {
+.serie-description-header p {
   font-size: 20px;
-  width: 471px;
-  margin-top: 0;
+  font-weight: 300;
+  letter-spacing: 0.24px;
+  line-height: 25px;
+  width: 485px;
+  margin-top: 2px;
 }
 
 .buttons-header {
   display: flex;
   justify-content: space-between;
-  margin: 287px 0 0 58px;
-  width: 295px;
+  margin-top: 19px;
+  width: 298px;
+}
+.buttons-header div {
+  display: inline-flex;
+  align-items: center;
+  height: 41px;
+  border-radius: 3px;
+}
+.buttons-header div img {
+  padding-right: 11px;
+  padding-left: 36px;
+}
+.buttons-header div:first-child {
+  flex: 0 129px;
+}
+.buttons-header div:last-child {
+  flex: 0 156px;
+  padding-top: 2px;
+}
+.buttons-header div:last-child p {
+  font-weight: bold;
 }
 
 .container {
   width: 1383px;
   margin-left: auto;
+}
+
+.title-header-image {
+  margin-top: 186.69px;
+}
+.title-header-image img {
+  margin-left: 4px;
 }
 
 nav {
@@ -473,16 +505,23 @@ nav img {
 
 html {
   color: white;
+  font-family: Helvetica;
 }
 
 ul {
   font-size: 14px;
   letter-spacing: 0.5px;
-  font-family: Helvetica;
 }
 
-.debug-header {
-  margin-top: 20px;
+.serie-description-header {
+  margin-top: 2px;
+  margin-left: 2px;
+}
+
+.buttons-header p {
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  line-height: 19px;
 }
 
 /*# sourceMappingURL=style.css.map */

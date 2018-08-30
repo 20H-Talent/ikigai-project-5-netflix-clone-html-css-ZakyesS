@@ -2,6 +2,29 @@
 .buttons-header {
     
     @include flexy($just: space-between);
-    margin: 287px 0 0 58px;
-    width: 295px;
+    margin-top: 19px;
+    width: 298px;
+    & div {
+        @include flexy($disp: inline-flex,$align: center);
+        // border: 1px solid red;
+        height: 41px;
+        // width: 100%;
+        border-radius: 3px;
+        // background-color: rgba(51,51,51,0.4);
+        // background-color: black;
+        & img {
+            padding-right: 11px;
+            padding-left: 36px;
+        }
+    }
+    & div:first-child{ //first child
+        flex: 0 129px;
+    }
+    & div:last-child { //second child
+        flex: 0 156px;
+        padding-top: 2px;
+        & p {
+            font-weight: bold;
+        }
+    }
 }
