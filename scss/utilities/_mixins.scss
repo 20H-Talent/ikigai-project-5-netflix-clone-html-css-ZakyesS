@@ -1,0 +1,9 @@
+// Flexbox settings, Images
+
+@mixin flexy($disp: flex, $just: null, $wrap: null, $dir: null, $align: null) {
+    display: $disp;
+    justify-content: $just;
+    flex-wrap: $wrap;
+    flex-direction: $dir;
+    align-items: $align; 
+}
