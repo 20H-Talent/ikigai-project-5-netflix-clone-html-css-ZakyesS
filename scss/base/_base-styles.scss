@@ -10,3 +10,14 @@ html.debug {
         opacity: 0.7;
     }
 }
+.debug-header {
+    & h2 {
+        font-size: 23px;
+        margin-bottom: 0;
+    }
+    & p{
+        font-size: 20px;
+        width: 471px;
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="129px" height="41px" viewBox="0 0 129 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>EB007118-F062-45BE-8B0A-D086906112F9</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-58.000000, -356.000000)" id="banner">
+            <g>
+                <g id="button-play" transform="translate(58.000000, 356.000000)">
+                    <g id="button-play-hover">
+                        <rect id="bg-boton" fill-opacity="0.4" fill="#333333" x="0" y="0" width="129" height="41" rx="3"></rect>
+                        <path d="M35.5,24.7893571 L35.5,11.2106429 C35.5,10.6583581 35.9477153,10.2106429 36.5,10.2106429 C36.6718742,10.2106429 36.8408473,10.2549421 36.9906144,10.3392661 L49.0491427,17.1286232 C49.5303908,17.3995821 49.7008639,18.0093663 49.429905,18.4906144 C49.3401866,18.6499627 49.2084909,18.7816584 49.0491427,18.8713768 L36.9906144,25.6607339 C36.5093663,25.9316928 35.8995821,25.7612197 35.6286232,25.2799716 C35.5442993,25.1302044 35.5,24.9612313 35.5,24.7893571 Z" id="Line" fill="#FFFFFF"></path>
+                        <text id="Play" font-family="Helvetica" font-size="16" font-weight="normal" letter-spacing="0.200000003" fill="#FFFFFF">
+                            <tspan x="61" y="25">Pla</tspan>
+                            <tspan x="84.725" y="25">y</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -416,6 +416,23 @@ html.debug body {
   opacity: 0.7;
 }
 
+.debug-header h2 {
+  font-size: 23px;
+  margin-bottom: 0;
+}
+.debug-header p {
+  font-size: 20px;
+  width: 471px;
+  margin-top: 0;
+}
+
+.buttons-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 287px 0 0 58px;
+  width: 295px;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -423,7 +440,7 @@ nav {
   height: 68px;
 }
 nav img:last-of-type {
-  margin-left: 60px;
+  margin-left: 51px;
 }
 nav ul {
   display: flex;
@@ -459,6 +476,10 @@ ul {
   font-size: 14px;
   letter-spacing: 0.5px;
   font-family: Helvetica;
+}
+
+.debug-header {
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
