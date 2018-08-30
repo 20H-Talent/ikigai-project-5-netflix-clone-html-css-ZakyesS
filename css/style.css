@@ -433,9 +433,13 @@ html.debug body {
   width: 295px;
 }
 
+.container {
+  width: 1383px;
+  margin-left: auto;
+}
+
 nav {
   display: flex;
-  align-items: center;
   margin-top: 1px;
   height: 68px;
 }
@@ -464,8 +468,7 @@ nav ul li:nth-of-type(4) {
   flex-basis: 122px;
 }
 nav img {
-  margin-left: 58px;
-  margin-right: 38px;
+  margin-right: 39px;
 }
 
 html {

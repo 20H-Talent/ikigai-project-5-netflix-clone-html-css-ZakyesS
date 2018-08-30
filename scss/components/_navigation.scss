@@ -1,7 +1,7 @@
 // Navigation:
 
 nav {
-    @include flexy($align: center);
+    @include flexy();
     margin-top: 1px;
     height: 68px;
     & img:last-of-type {
@@ -40,7 +40,7 @@ nav {
     }
     & img {
         // border: 1px solid red;
-        margin-left: 58px;
-        margin-right: 38px;
+        // margin-left: 58px;
+        margin-right: 39px;
     }
 }
