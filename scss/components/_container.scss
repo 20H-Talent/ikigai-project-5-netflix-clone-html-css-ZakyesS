@@ -1,5 +1,5 @@
 .container {
-    width: 1383px;
+    width: 1382px;
     margin-left: auto;
 }
 .title-header-image {
@@ -36,5 +36,14 @@
     & img {
         margin: 0;
     }
-    
+}
+.netflix-originals {
+    margin-top: 86px;
+    & div {
+        @include flexy();
+        overflow-x: scroll;
+        & img {
+            margin-right: 5px;
+        }
+    }
 }

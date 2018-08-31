@@ -492,7 +492,7 @@ nav img {
 }
 
 .container {
-  width: 1383px;
+  width: 1382px;
   margin-left: auto;
 }
 
@@ -533,6 +533,17 @@ nav img {
   margin: 0;
 }
 
+.netflix-originals {
+  margin-top: 86px;
+}
+.netflix-originals div {
+  display: flex;
+  overflow-x: scroll;
+}
+.netflix-originals div img {
+  margin-right: 5px;
+}
+
 html {
   color: white;
   font-family: Helvetica;
@@ -568,6 +579,14 @@ ul {
   font-size: 15px;
   letter-spacing: -0.2px;
   line-height: 18px;
+}
+
+.netflix-originals h1 {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.16px;
+  line-height: 24px;
+  margin-bottom: 9px;
 }
 
 /*# sourceMappingURL=style.css.map */
