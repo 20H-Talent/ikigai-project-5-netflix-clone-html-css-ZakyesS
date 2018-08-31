@@ -6,12 +6,12 @@
     // colocar la imagen hacia abajo
    margin-top: 186.69px;
    & img {
-    margin-left: 4px;
+    margin-left: 3px;
    }
 }
 .age-film {
     @include flexy($align: center);
-    margin-left: 1288px;
+    margin-left: 1287px;
     margin-top: -34px;
     .rectangle-side {
         height: 32px;

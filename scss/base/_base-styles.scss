@@ -7,7 +7,7 @@ html.debug {
     background-size: 100%;
     
     body {
-        opacity: 0.7;
+        opacity: 1;
     }
 }
 .serie-description-header {
@@ -17,13 +17,15 @@ html.debug {
         letter-spacing: 0.22px;
         line-height: 26px;
         margin-bottom: 0;
+        margin-left: 1px;
+        margin-top: 16.26px;
     }
     & p {
         font-size: 20px;
         font-weight: 300;
-        letter-spacing: 0.24px;
+        letter-spacing: 0.26px;
         line-height: 25px;
         width: 485px;
-        margin-top: 1px;
+        margin-top: 2px;
     }
 }
