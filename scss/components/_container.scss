@@ -9,3 +9,32 @@
     margin-left: 4px;
    }
 }
+.age-film {
+    @include flexy($align: center);
+    margin-left: 1288px;
+    margin-top: -34px;
+    .rectangle-side {
+        height: 32px;
+        width: 3px;
+        background-color: white;
+    } 
+    .rectangle {
+        height: 32px;
+        width: 95px;
+        background-color: #252928;
+    }
+}
+.search {
+    display: none;
+    & input {
+        width: 268px;
+        height: 34px;
+        border: 1px solid #DDDDDD;
+        background-color: #1D1C1D;
+
+    }
+    & img {
+        margin: 0;
+    }
+    
+}

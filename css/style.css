@@ -458,18 +458,6 @@ html.debug body {
   font-weight: bold;
 }
 
-.container {
-  width: 1383px;
-  margin-left: auto;
-}
-
-.title-header-image {
-  margin-top: 186.69px;
-}
-.title-header-image img {
-  margin-left: 4px;
-}
-
 nav {
   display: flex;
   margin-top: 1px;
@@ -503,6 +491,48 @@ nav img {
   margin-right: 39px;
 }
 
+.container {
+  width: 1383px;
+  margin-left: auto;
+}
+
+.title-header-image {
+  margin-top: 186.69px;
+}
+.title-header-image img {
+  margin-left: 4px;
+}
+
+.age-film {
+  display: flex;
+  align-items: center;
+  margin-left: 1288px;
+  margin-top: -34px;
+}
+.age-film .rectangle-side {
+  height: 32px;
+  width: 3px;
+  background-color: white;
+}
+.age-film .rectangle {
+  height: 32px;
+  width: 95px;
+  background-color: #252928;
+}
+
+.search {
+  display: none;
+}
+.search input {
+  width: 268px;
+  height: 34px;
+  border: 1px solid #DDDDDD;
+  background-color: #1D1C1D;
+}
+.search img {
+  margin: 0;
+}
+
 html {
   color: white;
   font-family: Helvetica;
@@ -522,6 +552,22 @@ ul {
   font-size: 16px;
   letter-spacing: 0.2px;
   line-height: 19px;
+}
+
+.rectangle p {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.16px;
+  line-height: 19px;
+  margin-left: 13px;
+  margin-top: 9px;
+}
+
+.search input[placeholder] .titles-people-genr {
+  color: #7F7F7F;
+  font-size: 15px;
+  letter-spacing: -0.2px;
+  line-height: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */
