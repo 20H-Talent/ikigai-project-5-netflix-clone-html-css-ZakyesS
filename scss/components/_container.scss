@@ -47,3 +47,40 @@
         }
     }
 }
+.continue-watching {
+    margin-top: 64px;
+    & div:only-of-type {
+        margin-left: 2px;
+        @include flexy();
+        overflow-x: scroll; 
+        & div {
+            @include flexy($align: center, $dir:column);
+            & .progress-bar {
+                margin-top: 6.31px;
+                margin-right: 9px;
+                @include flexy($just: flex-start);
+                & .gray-progress {
+                    height: 4px;
+                    width: 132px;
+                    background-color: #606060;
+                    
+                    & .red-progress {
+                        align-self: flex-start;
+                        margin-left: 0;
+                        height: 4px;
+                        width: 39px;
+                        background-color: #B3212C;
+                    }
+                }
+            }
+            // images on div
+            & .rectangular-images {
+                height: 121.69px;
+                width: 216px;
+                margin-right: 5px;
+            }
+        }
+    }
+}
+//  carrousel 1
+// carrousel 2 - el unico que cambie en estructura
