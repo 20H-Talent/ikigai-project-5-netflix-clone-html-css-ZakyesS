@@ -1,4 +1,4 @@
-// Flexbox settings, Images
+// Flexbox settings, Images, fonts
 
 @mixin flexy($disp: flex, $just: null, $wrap: null, $dir: null, $align: null) {
     display: $disp;
@@ -6,4 +6,13 @@
     flex-wrap: $wrap;
     flex-direction: $dir;
     align-items: $align; 
+}
+
+@mixin font-style($color-font: $principal-color-font, $family-font: $f-family, $weight-font: $f-weight, $f-size: null, $l-spacing: null, $l-height: null) {
+    font-family: $family-font;
+    font-weight: $weight-font;
+    font-size: $f-size;
+    letter-spacing: $l-spacing;
+    line-height:  $l-height;
+    color: $color-font;
 }

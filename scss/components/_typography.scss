@@ -1,15 +1,10 @@
 // Typography:
 
 html {
-    color: white;
-    font-family: Helvetica;
+    @include font-style($principal-color-font, $f-family);
 }
 ul {
-    // font-size: 0.90em;
-    font-size: 14px;
-    // font-weight: bold;
-    letter-spacing: 0.5px;
-    // font-family: Helvetica;
+    @include font-style($f-size: 14px, $l-spacing: 0.5px);
 }
 // .serie-description-header {
 //     margin-top: 2px;
@@ -18,35 +13,27 @@ ul {
 // }
 .buttons-header {
     & p {
-        font-size: 16px;
-        letter-spacing: 0.2px;
-        line-height: 19px;
-        // margin-left: 1px;
+        @include font-style($f-size: 16px, $l-spacing: 0.2px, $l-height: 19px);
     }
 }
 .rectangle p {
-    font-size: 16px;
-    font-weight: bold;
-    letter-spacing: 0.16px;
-    line-height: 19px;
+    @include font-style($f-size: 16px, $weight-font: bold, $l-spacing: 0.16px, $l-height: 19px);
     margin-left: 13px;
     margin-top: 9px;
 }
 .search input[placeholder] {
-    .titles-people-genr {
-        color: #7F7F7F;
-        font-size: 15px;
-        letter-spacing: -0.2px;
-        line-height: 18px;
-    }
+    @include font-style($color-font: $secondary-color-font, $f-size: 15px, $l-spacing: -0.2px, $l-height: 18px);
 }
 .netflix-originals {
     & h1 {
-        font-size: 20px;
-        font-weight: bold;
-        letter-spacing: 0.16px;
-        line-height: 24px;
+        @include font-style($f-size: 20px, $weight-font: bold, $l-spacing: 0.16px, $l-height: 24px);
         margin-bottom: 9px;
         margin-top: 0.4px;
+    }
+}
+.continue-watching {
+    & h2 {
+        @include font-style($f-size: 20px, $weight-font: bold, $l-spacing: 0.16px, $l-height: 24px);
+        margin-bottom: 10px;
     }
 }
