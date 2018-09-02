@@ -559,7 +559,7 @@ nav img {
 }
 
 .carrousel-2.type-2 {
-  margin-bottom: 44px;
+  margin-bottom: 43px;
 }
 .carrousel-2.type-2 div {
   display: flex;
@@ -591,13 +591,13 @@ nav img {
   background-color: #B3212C;
 }
 .carrousel-2.type-2 div div img {
-  height: 121.69px;
+  height: 123.69px;
   width: 214px;
   margin-right: 5px;
 }
 
 .carrousel-1.type-2 {
-  margin-bottom: 55px;
+  margin-bottom: 52px;
 }
 .carrousel-1.type-2 div {
   display: flex;
@@ -605,7 +605,7 @@ nav img {
   margin-left: 2px;
 }
 .carrousel-1.type-2 div img {
-  height: 121.69px;
+  height: 123.69px;
   width: 216px;
   margin-right: 5px;
 }
