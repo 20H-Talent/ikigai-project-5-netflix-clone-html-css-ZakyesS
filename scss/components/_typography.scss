@@ -37,3 +37,10 @@ ul {
         margin-bottom: 10px;
     }
 }
+.carrousel-1.type-2 {
+    & h2 {
+        @include font-style($f-size: 20px, $weight-font: bold, $l-spacing: 0.16px, $l-height: 24px);
+        margin-bottom: 10px;
+    }
+
+}

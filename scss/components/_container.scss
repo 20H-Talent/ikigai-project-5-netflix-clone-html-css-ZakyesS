@@ -37,18 +37,25 @@
         margin: 0;
     }
 }
-.carrousel-1 {
+.carrousel-1.type-1 {
     margin-top: 86px;
     @include carrousel-simple() {
         @include images-carrousel($type: 'big');
     }   
 }
-.carrousel-2 {
+.carrousel-2.type-2 {
     margin-top: 63px;
     @include carrousel-simple() {
         margin-left: 2px;
         @include carrousel-progess() {
             @include images-carrousel();
         }
+    }
+}
+.carrousel-1.type-2 {
+    margin-top: 44px;
+    @include carrousel-simple() {
+        margin-left: 2px;
+        @include images-carrousel($w: 216px);
     }
 }

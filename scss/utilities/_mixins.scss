@@ -18,7 +18,7 @@
 }
 
 // FOR IMAGES ON CARROUSEL DEPEND OF HIS TYPE.
-@mixin images-carrousel($type: 'small') {
+@mixin images-carrousel($type: 'small', $w: 214px) {
     @if($type == 'big'){
         img {
             margin-right: 5px;
@@ -27,7 +27,7 @@
     @else if($type == 'small') {
         img {
             height: 121.69px;
-            width: 214px;
+            width: $w;
             margin-right: 5px;
         }
     }
