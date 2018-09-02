@@ -24,23 +24,25 @@ ul {
 .search input[placeholder] {
     @include font-style($color-font: $secondary-color-font, $f-size: 15px, $l-spacing: -0.2px, $l-height: 18px);
 }
-.carrousel-1 {
-    & h1 {
+.carrousel-1,
+.carrousel-2,
+.carrousel-1.type-2 {
+    & h2 {
         @include font-style($f-size: 20px, $weight-font: bold, $l-spacing: 0.16px, $l-height: 24px);
         margin-bottom: 9px;
         margin-top: 0.4px;
     }
 }
-.carrousel-2 {
-    & h2 {
-        @include font-style($f-size: 20px, $weight-font: bold, $l-spacing: 0.16px, $l-height: 24px);
-        margin-bottom: 10px;
-    }
-}
-.carrousel-1.type-2 {
-    & h2 {
-        @include font-style($f-size: 20px, $weight-font: bold, $l-spacing: 0.16px, $l-height: 24px);
-        margin-bottom: 10px;
-    }
+// .carrousel-2 {
+//     & h2 {
+//         @include font-style($f-size: 20px, $weight-font: bold, $l-spacing: 0.16px, $l-height: 24px);
+//         margin-bottom: 10px;
+//     }
+// }
+// .carrousel-1.type-2 {
+//     & h2 {
+//         @include font-style($f-size: 20px, $weight-font: bold, $l-spacing: 0.16px, $l-height: 24px);
+//         margin-bottom: 10px;
+//     }
 
-}
+// }
