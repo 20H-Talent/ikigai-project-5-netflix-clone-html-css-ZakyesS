@@ -39,7 +39,7 @@
 }
 .carrousel-1.type-1 {
     margin-top: 86px;
-    margin-bottom: 63px;
+    margin-bottom: 64px;
     @include carrousel-simple() {
         @include images-carrousel($type: 'big');
     }   
