@@ -651,6 +651,41 @@ nav #lupa-icon {
   width: 110px;
 }
 
+.container-detail {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 700px;
+}
+.container-detail .play-button {
+  position: absolute;
+  top: 72px;
+  left: 45px;
+  width: 60px;
+  height: 60;
+  display: flex;
+}
+.container-detail .play-button .oval {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-sizing: border-box;
+  height: 54px;
+  width: 54px;
+  border: 6px solid #DADADA;
+}
+.container-detail .play-button .oval .line {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.container-detail .play-button .oval .left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
 html {
   font-family: Helvetica;
   font-weight: normal;
