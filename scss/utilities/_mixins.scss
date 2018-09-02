@@ -16,3 +16,55 @@
     line-height:  $l-height;
     color: $color-font;
 }
+
+// FOR IMAGES ON CARROUSEL DEPEND OF HIS TYPE.
+@mixin images-carrousel($type: 'small') {
+    @if($type == 'big'){
+        img {
+            margin-right: 5px;
+        }    
+    }
+    @else if($type == 'small') {
+        img {
+            height: 121.69px;
+            width: 214px;
+            margin-right: 5px;
+        }
+    }
+}
+
+// FOR ALL BASE CARROUSEL STRUCTURE
+@mixin carrousel-simple() {
+    & div {
+        @include flexy();
+        overflow-x: scroll;
+        @content;
+    }
+}
+
+// ONLY USES ON SECOND CARROUSEL - CONTINUE WATCHING SECTION
+@mixin carrousel-progess() {
+    & div {
+        overflow-x: initial;
+        @include flexy($align: center, $dir:column);
+        & .progress-bar {
+            margin-top: 6.31px;
+            margin-right: 9px;
+            @include flexy($just: flex-start);
+            & .gray-progress {
+                height: 4px;
+                width: 132px;
+                background-color: #606060;
+                
+                & .red-progress {
+                    align-self: flex-start;
+                    margin-left: 0;
+                    height: 4px;
+                    width: 39px;
+                    background-color: #B3212C;
+                }
+            }
+        }
+        @content;
+    }
+}
