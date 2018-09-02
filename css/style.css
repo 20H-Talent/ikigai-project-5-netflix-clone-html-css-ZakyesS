@@ -632,7 +632,7 @@ nav img {
   flex-basis: 47px;
 }
 .main-footer .sections-links {
-  margin-bottom: 64px;
+  margin-bottom: 63px;
   display: flex;
   justify-content: space-between;
   width: 849px;
@@ -724,6 +724,7 @@ ul {
   letter-spacing: 0.11px;
   line-height: 17px;
   color: #7F7F7F;
+  margin-bottom: 34px;
 }
 
 /*# sourceMappingURL=style.css.map */

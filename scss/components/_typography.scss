@@ -56,5 +56,6 @@ ul {
     }
     & p {
         @include font-style($f-size: 14px, $l-spacing: 0.11px, $l-height: 17px, $color-font: $secondary-color-font);
+        margin-bottom: 34px;
     }    
 }
