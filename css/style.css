@@ -618,7 +618,7 @@ nav #lupa-icon {
 .main-footer .social-links {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
   width: 201px;
 }
 .main-footer .social-links li:first-child {
@@ -631,7 +631,7 @@ nav #lupa-icon {
   flex-basis: 47px;
 }
 .main-footer .sections-links {
-  margin-bottom: 63px;
+  margin-bottom: 65px;
   display: flex;
   justify-content: space-between;
   width: 849px;
@@ -642,7 +642,7 @@ nav #lupa-icon {
   width: 114px;
 }
 .main-footer .sections-links ul li {
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 }
 .main-footer .sections-links ul:nth-of-type(2) {
   width: 111px;
@@ -657,11 +657,15 @@ html {
   color: white;
 }
 
-ul {
+nav ul {
   font-family: Helvetica;
   font-weight: normal;
   font-size: 14px;
   letter-spacing: 0.5px;
+  color: white;
+}
+nav a {
+  text-decoration: none;
   color: white;
 }
 

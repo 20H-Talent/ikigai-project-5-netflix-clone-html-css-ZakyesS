@@ -3,14 +3,21 @@
 html {
     @include font-style($principal-color-font, $f-family);
 }
-ul {
-    @include font-style($f-size: 14px, $l-spacing: 0.5px);
+nav {
+    & ul {
+        @include font-style($f-size: 14px, $l-spacing: 0.5px);
+    }
+    & a {
+        text-decoration: none;
+        color: $principal-color-font;
+    }
 }
 // .serie-description-header {
 //     margin-top: 2px;
 //     margin-left: 2px;
     
 // }
+
 .buttons-header {
     & p {
         @include font-style($f-size: 16px, $l-spacing: 0.2px, $l-height: 19px);

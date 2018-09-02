@@ -72,7 +72,7 @@
     & .social-links {
         @include flexy($just: space-between);
         // margin-left: 1px;
-        margin-bottom: 15px;
+        margin-bottom: 13px;
         width: 201px;
         & li:first-child {
             flex-basis: 33px;
@@ -85,7 +85,7 @@
         }
     }
     & .sections-links {
-        margin-bottom: 63px;
+        margin-bottom: 65px;
         @include flexy($just: space-between);
         width: 849px;
 
@@ -93,7 +93,7 @@
             @include flexy($dir: column);
             width: 114px;
             & li {
-                margin-bottom: 15px; 
+                margin-bottom: 13px; 
             }
         }
         & ul:nth-of-type(2) {
