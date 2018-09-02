@@ -548,6 +548,7 @@ nav img {
 
 .carrousel-1.type-1 {
   margin-top: 86px;
+  margin-bottom: 63px;
 }
 .carrousel-1.type-1 div {
   display: flex;
@@ -558,7 +559,7 @@ nav img {
 }
 
 .carrousel-2.type-2 {
-  margin-top: 63px;
+  margin-bottom: 44px;
 }
 .carrousel-2.type-2 div {
   display: flex;
@@ -596,7 +597,7 @@ nav img {
 }
 
 .carrousel-1.type-2 {
-  margin-top: 44px;
+  margin-bottom: 53px;
 }
 .carrousel-1.type-2 div {
   display: flex;
