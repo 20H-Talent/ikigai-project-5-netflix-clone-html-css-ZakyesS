@@ -46,3 +46,15 @@ ul {
 //     }
 
 // }
+
+.main-footer {
+    & .sections-links {
+        & a {
+            text-decoration: none;
+            @include font-style($f-size: 13px, $l-spacing: 0.25px, $l-height: 16px, $color-font: $secondary-color-font);
+        }   
+    }
+    & p {
+        @include font-style($f-size: 14px, $l-spacing: 0.11px, $l-height: 17px, $color-font: $secondary-color-font);
+    }    
+}

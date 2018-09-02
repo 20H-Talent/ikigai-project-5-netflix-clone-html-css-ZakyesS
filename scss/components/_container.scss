@@ -62,3 +62,45 @@
         @include images-carrousel($w: 216px);
     }
 }
+
+.main-footer {
+    margin-top: 145px;
+    margin-left: 171px;
+    height: 246px;
+    width: 849px;
+
+    & .social-links {
+        @include flexy($just: space-between);
+        // margin-left: 1px;
+        margin-bottom: 15px;
+        width: 201px;
+        & li:first-child {
+            flex-basis: 33px;
+        }
+        & li:nth-of-type(2) {
+            flex-basis: 34px;
+        }
+        & li:last-child {
+            flex-basis: 47px;
+        }
+    }
+    & .sections-links {
+        margin-bottom: 64px;
+        @include flexy($just: space-between);
+        width: 849px;
+
+        & ul  {
+            @include flexy($dir: column);
+            width: 114px;
+            & li {
+                margin-bottom: 15px; 
+            }
+        }
+        & ul:nth-of-type(2) {
+            width: 111px;
+        }
+        & ul:nth-of-type(3) {
+            width: 110px;
+        }
+    }
+}
