@@ -48,7 +48,7 @@
         overflow-x: initial;
         @include flexy($align: center, $dir:column);
         & .progress-bar {
-            margin-top: 6.31px;
+            margin-top: 1.31px;
             margin-right: 9px;
             @include flexy($just: flex-start);
             & .gray-progress {
