@@ -473,14 +473,10 @@ nav {
   display: flex;
   height: 68px;
 }
-nav img:last-of-type {
-  margin-left: 51px;
-  margin-top: 0;
-}
 nav ul {
   display: flex;
   align-items: center;
-  width: 1120px;
+  width: 1172px;
   margin-top: 3px;
 }
 nav ul li:first-of-type {
@@ -501,7 +497,10 @@ nav ul li:nth-of-type(4) {
 }
 nav img {
   margin-right: 38px;
-  margin-top: 1px;
+  margin-top: 22px;
+}
+nav #lupa-icon {
+  margin-top: 0;
 }
 
 .container {
