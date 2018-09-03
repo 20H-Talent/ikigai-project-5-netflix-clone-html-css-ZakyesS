@@ -447,34 +447,53 @@ html.debug2 body {
   margin-top: 21px;
   width: 295px;
 }
-.buttons-header div {
+.buttons-header button {
   display: inline-flex;
   align-items: center;
   height: 41px;
   border-radius: 3px;
   background-color: rgba(51, 51, 51, 0.4);
+  border: none;
 }
-.buttons-header div img {
+.buttons-header button img {
   padding-right: 11px;
-  padding-left: 35px;
-  padding-bottom: 4px;
+  padding-left: 29px;
+  padding-bottom: 11px;
 }
-.buttons-header div:first-child {
+.buttons-header button .defauly-icon {
+  display: inline-block;
+}
+.buttons-header button .hover-icon {
+  display: none;
+}
+.buttons-header button:hover {
+  background-color: #E6E6E6;
+}
+.buttons-header button:hover p {
+  color: #000000;
+}
+.buttons-header button:hover .default-icon {
+  display: none;
+}
+.buttons-header button:hover .hover-icon {
+  display: inline-block;
+}
+.buttons-header button:first-child {
   flex: 0 129px;
 }
-.buttons-header div:first-child p {
-  margin-top: 16px;
+.buttons-header button:first-child p {
+  margin-top: 10px;
 }
-.buttons-header div:last-child {
+.buttons-header button:last-child {
   flex: 0 154px;
   padding-top: 2px;
 }
-.buttons-header div:last-child p {
+.buttons-header button:last-child p {
   font-weight: bold;
-  margin-top: 15px;
+  margin-top: 10px;
 }
-.buttons-header div:last-child img {
-  padding-left: 36px;
+.buttons-header button:last-child img {
+  padding-left: 30px;
 }
 
 nav {
