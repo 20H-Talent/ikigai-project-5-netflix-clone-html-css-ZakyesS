@@ -539,6 +539,10 @@ nav img {
   margin-left: 3px;
 }
 
+.serie-description-header {
+  margin-top: 18px;
+}
+
 .age-film {
   display: flex;
   align-items: center;

@@ -9,6 +9,11 @@
     margin-left: 3px;
    }
 }
+.serie-description-header {
+    margin-top: 18px;
+    //   margin-left: 2px;
+    
+}
 .age-film {
     @include flexy($align: center);
     margin-left: 1287px;
