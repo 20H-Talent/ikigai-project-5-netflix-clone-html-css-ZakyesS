@@ -737,6 +737,41 @@ form {
   margin: 0 5px 0 4px;
 }
 
+.search-header {
+  margin-bottom: 76px;
+}
+
+.test {
+  margin-left: 0px;
+}
+.test .carrousel-1.type-3 div {
+  display: flex;
+  overflow-x: scroll;
+}
+.test .carrousel-1.type-3 div img {
+  height: 121.69px;
+  width: 216px;
+  margin-right: 5px;
+}
+.test .carrousel-1.type-3.m-43 {
+  margin-bottom: 51px;
+}
+.test .carrousel-1.type-3.m-48 {
+  margin-bottom: 55px;
+}
+.test .carrousel-1.type-3.m-47 {
+  margin-bottom: 55px;
+}
+.test .carrousel-1.type-3:first-child {
+  margin-left: 4px;
+}
+.test .carrousel-1.type-3:nth-child(1n+6) {
+  margin-left: 0;
+}
+.test .carrousel-1.type-3:last-child {
+  margin-top: -2px;
+}
+
 html {
   font-family: Helvetica;
   font-weight: normal;
