@@ -527,6 +527,10 @@ nav img {
   margin-top: 22px;
 }
 
+nav:hover {
+  background-color: #141414;
+}
+
 .container {
   width: 1382px;
   margin-left: auto;
@@ -814,6 +818,9 @@ nav ul {
 nav a {
   text-decoration: none;
   color: white;
+}
+nav #logo-netflix {
+  margin-left: 58px;
 }
 
 .buttons-header p {
