@@ -765,6 +765,9 @@ form {
 .test .carrousel-1.type-3:first-child {
   margin-left: 4px;
 }
+.test .carrousel-1.type-3 {
+  margin-left: 3px;
+}
 .test .carrousel-1.type-3:nth-child(1n+6) {
   margin-left: 0;
 }
