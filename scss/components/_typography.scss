@@ -38,6 +38,46 @@ nav {
         margin-top: 0.4px;
     }
 }
+.information-hover {
+    & p {
+        @include font-style($color-font: $principal-color-font);
+        
+    }
+    & .first {
+        @include font-style($f-size: 16px, $l-spacing:1.2px, $l-height: 19px);    
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+    & .resumee {
+        & .second {
+            @include font-style($f-size: 14px, $l-spacing: 0.3px, $l-height: 17px);
+            margin: 0;
+            width: 90px;
+        }
+        & #color {
+            @include font-style($l-spacing: 0.4px);
+            color:#46D36A;
+            width: 100px;
+        } 
+        & div[class=resumee-numbers] {
+            // border: 1px solid blueviolet;
+            border: 1px solid rgba(255,255,255,0.41);
+            height: 16px;
+            width: 42px;
+            margin-top: -1px;
+            margin-right: 9px;
+            & p {
+                margin-left: 5px;
+                // margin-top: -2px;
+            }
+        }   
+    }
+    & .third {
+        @include font-style($f-size: 14px, $l-height: 18px);
+        margin-top: 7px;
+    }
+}
+
 // .carrousel-2 {
 //     & h2 {
 //         @include font-style($f-size: 20px, $weight-font: bold, $l-spacing: 0.16px, $l-height: 24px);

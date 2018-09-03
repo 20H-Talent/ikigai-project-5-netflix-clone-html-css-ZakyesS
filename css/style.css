@@ -409,7 +409,7 @@ ul {
 }
 
 html.debug {
-  background: transparent url(/tmp/design-home.jpg) no-repeat top left;
+  background: transparent url(/tmp/00-home-with-hovers.jpg) no-repeat top left;
   background-size: 100%;
 }
 html.debug body {
@@ -609,6 +609,44 @@ nav:hover {
 }
 .carrousel-1.type-1 div img {
   margin-right: 5px;
+}
+
+.carrousel-1.type-1 a {
+  position: relative;
+}
+.carrousel-1.type-1 a .information-hover {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  display: none;
+  position: absolute;
+  top: 233px;
+  left: 11px;
+}
+.carrousel-1.type-1 a .information-hover .button-play-carrousel {
+  display: flex;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.51);
+  position: relative;
+}
+.carrousel-1.type-1 a .information-hover .button-play-carrousel img[src*=Triangle] {
+  position: absolute;
+  left: 13px;
+}
+.carrousel-1.type-1 a .information-hover .resumee {
+  display: flex;
+  justify-content: space-between;
+}
+
+.carrousel-1.type-1 a:hover {
+  position: relative;
+}
+.carrousel-1.type-1 a:hover .information-hover {
+  display: block;
 }
 
 .carrousel-2.type-2 {
@@ -863,6 +901,58 @@ nav #logo-netflix {
   color: white;
   margin-bottom: 9px;
   margin-top: 0.4px;
+}
+
+.information-hover p {
+  font-family: Helvetica;
+  font-weight: normal;
+  color: white;
+}
+.information-hover .first {
+  font-family: Helvetica;
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  line-height: 19px;
+  color: white;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.information-hover .resumee .second {
+  font-family: Helvetica;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  line-height: 17px;
+  color: white;
+  margin: 0;
+  width: 90px;
+}
+.information-hover .resumee #color {
+  font-family: Helvetica;
+  font-weight: normal;
+  letter-spacing: 0.4px;
+  color: white;
+  color: #46D36A;
+  width: 100px;
+}
+.information-hover .resumee div[class=resumee-numbers] {
+  border: 1px solid rgba(255, 255, 255, 0.41);
+  height: 16px;
+  width: 42px;
+  margin-top: -1px;
+  margin-right: 9px;
+}
+.information-hover .resumee div[class=resumee-numbers] p {
+  margin-left: 5px;
+}
+.information-hover .third {
+  font-family: Helvetica;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: white;
+  margin-top: 7px;
 }
 
 .main-footer .sections-links a {
