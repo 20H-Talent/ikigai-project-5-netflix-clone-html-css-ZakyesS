@@ -23,12 +23,13 @@
                 <li><a href="https://www.google.es" target="_blank">Recently Added</a></li>
                 <li><a href="https://www.google.es">My List</a></li>
             </ul> 
-            <form class="search" action="search.html" method="post">
-                <img src="images/lupa.svg" alt="lupa icon">                        
-                <label for=""></label>
-                <input type="text" id="input-search" name="user-search" placeholder="Titles, people, genres">
+            <form action="search.html" method="post">
+                <div id="search-container" class="search">
+                    <a href="#search-container"><img id="lupa-icon" src="images/lupa.svg" alt="lupa icon"></a>
+                    <input id="form-focus" type="text" id="input-search" name="user-search" placeholder="Titles, people, genres">    
+                </div>
             </form>
-            <img id="lupa-icon" src="images/lupa.svg" alt="lupa icon">
+ 
         </nav>
         <div class="title-header-image">
             <img src="images/imagen-titulo.svg" alt="imagen de titulo de The Innocents">
