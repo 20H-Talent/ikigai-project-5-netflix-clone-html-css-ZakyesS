@@ -38,6 +38,7 @@
     & div {
         @include flexy();
         overflow-x: scroll;
+        // overflow-y: hidden;
         @content;
     }
 }

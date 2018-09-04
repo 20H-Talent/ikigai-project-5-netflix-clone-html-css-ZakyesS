@@ -26,7 +26,7 @@ nav {
     margin-left: 13px;
     margin-top: 9px;
 }
-.search input[placeholder] {
+.search-nav input[placeholder] {
     @include font-style($color-font: $secondary-color-font, $f-size: 15px, $l-spacing: -0.2px, $l-height: 18px);
 }
 .carrousel-1,
