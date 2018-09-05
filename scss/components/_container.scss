@@ -91,7 +91,8 @@
             }
         }
         & .resumee {
-            @include flexy($just: space-between);
+            @include flexy($align: center);
+            height: 22px;
             // width: 82%;
             
         }

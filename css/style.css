@@ -631,7 +631,8 @@ nav:hover {
 }
 .carrousel-1.type-1 a .information-hover .resumee {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  height: 22px;
 }
 
 .carrousel-1.type-1 a:hover {
@@ -908,7 +909,7 @@ nav #logo-netflix {
   line-height: 19px;
   color: white;
   margin-top: 8px;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
 .information-hover .resumee .second {
   font-family: Helvetica;
@@ -918,7 +919,7 @@ nav #logo-netflix {
   line-height: 17px;
   color: white;
   margin: 0;
-  width: 90px;
+  width: 49px;
 }
 .information-hover .resumee #color {
   font-family: Helvetica;
@@ -926,17 +927,22 @@ nav #logo-netflix {
   letter-spacing: 0.4px;
   color: white;
   color: #46D36A;
-  width: 100px;
+  width: 74px;
+  margin-right: 6px;
 }
-.information-hover .resumee div[class=resumee-numbers] {
+.information-hover .resumee .resumee-numbers {
+  font-family: Helvetica;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  line-height: 17px;
+  color: white;
+  display: flex;
+  justify-content: center;
   border: 1px solid rgba(255, 255, 255, 0.41);
-  height: 16px;
-  width: 42px;
-  margin-top: -1px;
-  margin-right: 9px;
-}
-.information-hover .resumee div[class=resumee-numbers] p {
-  margin-left: 5px;
+  height: 17px;
+  width: 36px;
+  margin: 0 8px 0 0;
 }
 .information-hover .third {
   font-family: Helvetica;
@@ -944,7 +950,8 @@ nav #logo-netflix {
   font-size: 14px;
   line-height: 18px;
   color: white;
-  margin-top: 7px;
+  margin-top: 3px;
+  width: 96%;
 }
 
 .main-footer .sections-links a {

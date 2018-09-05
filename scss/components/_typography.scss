@@ -46,35 +46,35 @@ nav {
     & .first {
         @include font-style($f-size: 16px, $l-spacing:1.2px, $l-height: 19px);    
         margin-top: 8px;
-        margin-bottom: 8px;
+        margin-bottom: 5px;
     }
     & .resumee {
         & .second {
             @include font-style($f-size: 14px, $l-spacing: 0.3px, $l-height: 17px);
             margin: 0;
-            width: 90px;
+            width: 49px;
         }
         & #color {
             @include font-style($l-spacing: 0.4px);
             color:#46D36A;
-            width: 100px;
+            width: 74px;
+            margin-right: 6px;
         } 
-        & div[class=resumee-numbers] {
+        & .resumee-numbers {
             // border: 1px solid blueviolet;
+            @include font-style($f-size: 14px, $l-spacing: 0.3px, $l-height: 17px);
+            @include flexy($just: center);
             border: 1px solid rgba(255,255,255,0.41);
-            height: 16px;
-            width: 42px;
-            margin-top: -1px;
-            margin-right: 9px;
-            & p {
-                margin-left: 5px;
-                // margin-top: -2px;
-            }
+            height: 17px;
+            width: 36px;
+            
+            margin: 0 8px 0 0;
         }   
     }
     & .third {
         @include font-style($f-size: 14px, $l-height: 18px);
-        margin-top: 7px;
+        margin-top: 3px;
+        width: 96%;
     }
 }
 
