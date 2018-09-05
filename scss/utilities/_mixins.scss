@@ -47,23 +47,16 @@
 @mixin carrousel-progess() {
     & div {
         overflow-x: initial;
-        @include flexy($align: center, $dir:column);
-        & .progress-bar {
-            margin-top: 1.31px;
-            margin-right: 9px;
-            @include flexy($just: flex-start);
-            & .gray-progress {
-                height: 4px;
-                width: 132px;
-                background-color: #606060;
-                
-                & .red-progress {
-                    align-self: flex-start;
-                    margin-left: 0;
-                    height: 4px;
-                    width: 39px;
-                    background-color: #B3212C;
-                }
+        @include flexy($just: flex-start, $dir:column);
+        & .w3-grey {
+            margin-top: 14.31px;
+            margin-left: 40px;
+            width: 60%;
+            height: 4px;
+            & .w3-red {
+                height: 100%;
+                width: 30%;
+                margin-left: 0;
             }
         }
         @content;

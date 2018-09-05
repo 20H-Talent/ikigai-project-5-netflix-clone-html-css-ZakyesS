@@ -653,26 +653,19 @@ nav:hover {
 .carrousel-2.type-2 div div {
   overflow-x: initial;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.carrousel-2.type-2 div div .progress-bar {
-  margin-top: 1.31px;
-  margin-right: 9px;
-  display: flex;
   justify-content: flex-start;
+  flex-direction: column;
 }
-.carrousel-2.type-2 div div .progress-bar .gray-progress {
+.carrousel-2.type-2 div div .w3-grey {
+  margin-top: 14.31px;
+  margin-left: 40px;
+  width: 60%;
   height: 4px;
-  width: 132px;
-  background-color: #606060;
 }
-.carrousel-2.type-2 div div .progress-bar .gray-progress .red-progress {
-  align-self: flex-start;
+.carrousel-2.type-2 div div .w3-grey .w3-red {
+  height: 100%;
+  width: 30%;
   margin-left: 0;
-  height: 4px;
-  width: 39px;
-  background-color: #B3212C;
 }
 .carrousel-2.type-2 div div img {
   height: 123.69px;
