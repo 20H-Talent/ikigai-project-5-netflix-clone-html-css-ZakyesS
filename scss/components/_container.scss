@@ -10,7 +10,7 @@
    }
 }
 .serie-description-header {
-    margin-top: 18px;
+    margin-top: 17px;
     //   margin-left: 2px;
     
 }
@@ -120,7 +120,7 @@
     @include carrousel-simple() {
         margin-left: 2px;
         @include carrousel-progess() {
-            @include images-carrousel();
+            @include images-carrousel($w: 216px);
         }
     }
 }

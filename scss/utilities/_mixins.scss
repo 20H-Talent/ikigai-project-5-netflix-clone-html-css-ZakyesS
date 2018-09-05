@@ -46,17 +46,21 @@
 // ONLY USES ON SECOND CARROUSEL - CONTINUE WATCHING SECTION
 @mixin carrousel-progess() {
     & div {
+        margin-left: 0;
         overflow-x: initial;
         @include flexy($just: flex-start, $dir:column);
         & .w3-grey {
-            margin-top: 14.31px;
+            margin-top: 2.31px;
             margin-left: 40px;
+            // margin-right: 9px;
             width: 60%;
             height: 4px;
+            // @include flexy($just: flex-start);
             & .w3-red {
                 height: 100%;
                 width: 30%;
                 margin-left: 0;
+                // background-color: #606060;
             }
         }
         @content;
