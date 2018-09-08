@@ -409,11 +409,11 @@ ul {
 }
 
 html.debug {
-  background: transparent url(/tmp/design-home.jpg) no-repeat top left;
+  background: transparent url(/tmp/00-home-with-hovers.jpg) no-repeat top left;
   background-size: 100%;
 }
 html.debug body {
-  opacity: 0.7;
+  opacity: 0.3;
 }
 
 html.debug2 {
@@ -975,10 +975,11 @@ nav:hover {
   overflow-x: scroll;
 }
 .carrousel-1.type-1 div img {
-  margin-right: 5px;
+  margin-right: 0px;
 }
 
 .carrousel-1.type-1 a {
+  margin-right: 5px;
   position: relative;
 }
 .carrousel-1.type-1 a .information-hover {
@@ -1002,12 +1003,71 @@ nav:hover {
 }
 .carrousel-1.type-1 a .information-hover .button-play-carrousel img[src*=Triangle] {
   position: absolute;
-  left: 13px;
+  left: 12px;
+  widows: auto;
+  height: auto;
 }
 .carrousel-1.type-1 a .information-hover .resumee {
   display: flex;
   align-items: center;
   height: 22px;
+}
+.carrousel-1.type-1 a .information-hover .resumee .second {
+  font-family: Helvetica;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  line-height: 17px;
+  color: white;
+  margin: 0;
+  width: 49px;
+}
+.carrousel-1.type-1 a .information-hover .resumee #color {
+  font-family: Helvetica;
+  font-weight: normal;
+  letter-spacing: 0.4px;
+  color: white;
+  color: #46D36A;
+  width: 74px;
+  margin-right: 6px;
+}
+.carrousel-1.type-1 a .information-hover .resumee .resumee-numbers {
+  font-family: Helvetica;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  line-height: 17px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.41);
+  height: 17px;
+  width: 36px;
+  margin: 0 8px 0 0;
+}
+.carrousel-1.type-1 a .information-hover p {
+  font-family: Helvetica;
+  font-weight: normal;
+  color: white;
+}
+.carrousel-1.type-1 a .information-hover .first {
+  font-family: Helvetica;
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  line-height: 19px;
+  color: white;
+  margin-top: 8px;
+  margin-bottom: 5px;
+}
+.carrousel-1.type-1 a .information-hover .third {
+  font-family: Helvetica;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: white;
+  margin-top: 3px;
+  width: 100%;
 }
 
 .carrousel-1.type-1 a:hover {
@@ -1018,35 +1078,72 @@ nav:hover {
 }
 
 .carrousel-2.type-2 {
-  margin-bottom: 43px;
+  margin-bottom: 41px;
 }
 .carrousel-2.type-2 div {
   display: flex;
   overflow-x: scroll;
-  margin-left: 2px;
 }
-.carrousel-2.type-2 div div {
-  margin-left: 0;
-  overflow-x: initial;
+.carrousel-2.type-2 div img {
+  height: 121.69px;
+  width: 217px;
+  margin-right: 0px;
+}
+.carrousel-2.type-2 div .carrousel-2-container {
+  margin-left: 1px;
+  margin-right: 5px;
   display: flex;
-  justify-content: flex-start;
   flex-direction: column;
+  align-items: center;
+  overflow: initial;
 }
-.carrousel-2.type-2 div div .w3-grey {
-  margin-top: 2.31px;
-  margin-left: 40px;
-  width: 60%;
+.carrousel-2.type-2 div .carrousel-2-container .w3-grey {
+  width: 59.6%;
+  height: 4px;
+  margin-top: 6px;
+}
+.carrousel-2.type-2 div .carrousel-2-container .w3-grey .w3-red {
+  width: 29%;
   height: 4px;
 }
-.carrousel-2.type-2 div div .w3-grey .w3-red {
-  height: 100%;
-  width: 30%;
+
+.carrousel-2.type-2 a .information-hover {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  display: none;
+  position: absolute;
+  top: 36px;
+  left: 4px;
+}
+.carrousel-2.type-2 a .information-hover .button-play-carrousel {
+  display: flex;
+  align-items: center;
+  height: 19px;
+  width: 20px;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.51);
+  position: relative;
+}
+.carrousel-2.type-2 a .information-hover .button-play-carrousel img[src*=Triangle] {
+  position: absolute;
+  left: 5px;
+  height: 10px;
+  width: auto;
+}
+.carrousel-2.type-2 a .information-hover .resumee {
+  display: flex;
+  align-items: center;
+  height: 22px;
   margin-left: 0;
 }
-.carrousel-2.type-2 div div img {
-  height: 123.69px;
-  width: 216px;
-  margin-right: 5px;
+
+.carrousel-2.type-2 a:hover {
+  position: relative;
+}
+.carrousel-2.type-2 a:hover .information-hover {
+  display: block;
 }
 
 .carrousel-1.type-2 {
@@ -1057,10 +1154,13 @@ nav:hover {
   overflow-x: scroll;
   margin-left: 2px;
 }
+.carrousel-1.type-2 div a {
+  margin-right: 5px;
+}
 .carrousel-1.type-2 div img {
   height: 123.69px;
   width: 216px;
-  margin-right: 5px;
+  margin-right: 0px;
 }
 
 .main-footer {
@@ -1178,7 +1278,7 @@ form {
 .test .carrousel-1.type-3 div img {
   height: 121.69px;
   width: 216px;
-  margin-right: 5px;
+  margin-right: 0px;
 }
 .test .carrousel-1.type-3.m-43 {
   margin-bottom: 51px;
@@ -1265,6 +1365,38 @@ nav #logo-netflix {
   margin-top: 0.4px;
 }
 
+.information-hover {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  display: none;
+  position: absolute;
+  top: 36px;
+  left: 4px;
+}
+.information-hover .button-play-carrousel {
+  display: flex;
+  align-items: center;
+  height: 19px;
+  width: 20px;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.51);
+  position: relative;
+}
+.information-hover .button-play-carrousel img[src*=Triangle] {
+  position: absolute;
+  left: 5px;
+  height: 10px;
+  width: auto;
+}
+.information-hover .resumee {
+  display: flex;
+  align-items: center;
+  height: 22px;
+  margin-left: 0;
+}
+
 .information-hover p {
   font-family: Helvetica;
   font-weight: normal;
@@ -1273,54 +1405,51 @@ nav #logo-netflix {
 .information-hover .first {
   font-family: Helvetica;
   font-weight: normal;
-  font-size: 16px;
-  letter-spacing: 1.2px;
-  line-height: 19px;
+  font-size: 9px;
+  letter-spacing: 0.5px;
+  line-height: 6px;
   color: white;
   margin-top: 8px;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
 }
 .information-hover .resumee .second {
   font-family: Helvetica;
   font-weight: normal;
-  font-size: 14px;
-  letter-spacing: 0.3px;
-  line-height: 17px;
+  font-size: 8px;
+  letter-spacing: 0px;
+  line-height: 6px;
   color: white;
-  margin: 0;
-  width: 49px;
+  margin-right: 2px;
+  width: 42px;
 }
 .information-hover .resumee #color {
-  font-family: Helvetica;
-  font-weight: normal;
-  letter-spacing: 0.4px;
-  color: white;
   color: #46D36A;
-  width: 74px;
-  margin-right: 6px;
+  width: 42px;
 }
 .information-hover .resumee .resumee-numbers {
   font-family: Helvetica;
   font-weight: normal;
-  font-size: 14px;
-  letter-spacing: 0.3px;
-  line-height: 17px;
+  font-size: 8px;
+  letter-spacing: 0.5px;
+  line-height: 6px;
   color: white;
   display: flex;
   justify-content: center;
   border: 1px solid rgba(255, 255, 255, 0.41);
-  height: 17px;
-  width: 36px;
-  margin: 0 8px 0 0;
+  padding-top: 4px;
+  width: 19px;
+  margin: 0 4px 0 0;
 }
 .information-hover .third {
   font-family: Helvetica;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 7px;
+  letter-spacing: 0.3px;
+  line-height: 9px;
   color: white;
-  margin-top: 3px;
-  width: 96%;
+  margin-top: -3px;
+  width: 100%;
+  margin-left: 0;
 }
 
 .main-footer .sections-links a {

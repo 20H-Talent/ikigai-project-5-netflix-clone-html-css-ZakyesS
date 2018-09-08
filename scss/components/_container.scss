@@ -69,40 +69,43 @@
     }   
 }
 .carrousel-1.type-1 a {
+    margin-right: 5px;
     position: relative;
-    & .information-hover {
-        width: 90%;
-        @include flexy($dir: column);
-        display: none;
-        position: absolute;
-        top: 233px;
-        left: 11px;
-        & .button-play-carrousel {
-            @include flexy($align:center);
-            height: 35px;
-            width: 35px;
-            border: 1px solid #FFFFFF;
-            border-radius: 50%;
-            background-color: rgba(0,0,0,0.51);
-            position: relative;
-            & img[src*=Triangle] {
-                position: absolute;
-                left: 13px;
-            }
-        }
-        & .resumee {
-            @include flexy($align: center);
-            height: 22px;
-            // width: 82%;
+    @include information-hover();
+    // la parte de information hover funciona.
+    // & .information-hover {
+    //     width: 90%;
+    //     @include flexy($dir: column);
+    //     display: none;
+    //     position: absolute;
+    //     top: 233px;
+    //     left: 11px;
+    //     & .button-play-carrousel {
+    //         @include flexy($align:center);
+    //         height: 35px;
+    //         width: 35px;
+    //         border: 1px solid #FFFFFF;
+    //         border-radius: 50%;
+    //         background-color: rgba(0,0,0,0.51);
+    //         position: relative;
+    //         & img[src*=Triangle] {
+    //             position: absolute;
+    //             left: 13px;
+    //         }
+    //     }
+    //     & .resumee {
+    //         @include flexy($align: center);
+    //         height: 22px;
+    //         // width: 82%;
             
-        }
-        // & .button-play-carrousel,
-        // .resumee, 
-        // .second,
-        // .third {
-        //     margin: 3px 0;
-        // }
-    }
+    //     }
+    //     // & .button-play-carrousel,
+    //     // .resumee, 
+    //     // .second,
+    //     // .third {
+    //     //     margin: 3px 0;
+    //     // }
+    // }
 }
 .carrousel-1.type-1 a:hover   {
     position: relative;
@@ -111,24 +114,53 @@
         display: block; 
         // border: 1px solid green;   
     }   
-       
-       
 }
 .carrousel-2.type-2 {
     // margin-top: 63px;
-    margin-bottom: 43px;
+    margin-bottom: 41px;
     @include carrousel-simple() {
-        margin-left: 2px;
-        @include carrousel-progess() {
-            @include images-carrousel($w: 216px);
+        // margin-left: 1px;
+        // @include carrousel-progess() {
+            @include images-carrousel($w: 217px, $h: 121.69px);
+        // }
+        & .carrousel-2-container {
+            margin-left: 1px;
+            margin-right: 5px;
+           @include flexy($dir:column, $align: center);
+           overflow: initial;
+            & .w3-grey {
+               width: 59.6%;
+               height: 4px;
+               margin-top: 6px;
+            //    margin-left: 44px;
+                & .w3-red {
+                    width: 29%;
+                    height: 4px;
+                    // margin-left: 0;
+                }
+            }
         }
     }
+}
+.carrousel-2.type-2 a {
+    @include information-hover($type: 'small');
+}
+.carrousel-2.type-2 a:hover {
+    position: relative;
+    & .information-hover {
+        // position: absolute;
+        display: block; 
+        // border: 1px solid green;   
+    }   
 }
 .carrousel-1.type-2 {
     // margin-top: 44px;
     margin-bottom: 48px;
     @include carrousel-simple() {
         margin-left: 2px;
+        & a {
+            margin-right: 5px;
+        }
         @include images-carrousel($w: 216px);
     }
 }

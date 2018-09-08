@@ -21,14 +21,14 @@
 @mixin images-carrousel($type: 'small', $w: 214px, $h: 123.69px) {
     @if($type == 'big'){
         img {
-            margin-right: 5px;
+            margin-right: 0px;
         }    
     }
     @else if($type == 'small') {
         img {
             height: $h;
             width: $w;
-            margin-right: 5px;
+            margin-right: 0px;
         }
     }
 }
@@ -43,26 +43,136 @@
     }
 }
 
-// ONLY USES ON SECOND CARROUSEL - CONTINUE WATCHING SECTION
-@mixin carrousel-progess() {
-    & div {
-        margin-left: 0;
-        overflow-x: initial;
-        @include flexy($just: flex-start, $dir:column);
-        & .w3-grey {
-            margin-top: 2.31px;
-            margin-left: 40px;
-            // margin-right: 9px;
-            width: 60%;
-            height: 4px;
-            // @include flexy($just: flex-start);
-            & .w3-red {
-                height: 100%;
-                width: 30%;
+// FOR INFORMATION WHEN HOVER THE IMAGE
+@mixin information-hover($type: 'big') {
+
+    @if($type == 'big') {
+        .information-hover {
+            // background: red;
+            width: 90%;
+            @include flexy($dir: column);
+            display: none;
+            position: absolute;
+            top: 233px;
+            left: 11px;
+            & .button-play-carrousel {
+                @include flexy($align:center);
+                height: 35px;
+                width: 35px;
+                border: 1px solid #FFFFFF;
+                border-radius: 50%;
+                background-color: rgba(0,0,0,0.51);
+                position: relative;
+                & img[src*=Triangle] {
+                    position: absolute;
+                    left: 12px;
+                    widows: auto;
+                    height: auto;
+                }
+            }
+            & .resumee {
+                @include flexy($align: center);
+                height: 22px;
+                // width: 82%;
+                & .second {
+                    @include font-style($f-size: 14px, $l-spacing: 0.3px, $l-height: 17px);
+                    margin: 0;
+                    width: 49px;
+                }
+                & #color {
+                    @include font-style($l-spacing: 0.4px);
+                    color:#46D36A;
+                    width: 74px;
+                    margin-right: 6px;
+                } 
+                & .resumee-numbers {
+                    // border: 1px solid blueviolet;
+                    @include font-style($f-size: 14px, $l-spacing: 0.3px, $l-height: 17px);
+                    @include flexy($just: center);
+                    border: 1px solid rgba(255,255,255,0.41);
+                    height: 17px;
+                    width: 36px;
+                    
+                    margin: 0 8px 0 0;
+                }   
+            }
+            & p {
+                @include font-style($color-font: $principal-color-font);
+                
+            }
+            & .first {
+                @include font-style($f-size: 16px, $l-spacing:1.2px, $l-height: 19px);    
+                margin-top: 8px;
+                margin-bottom: 5px;
+            }
+            & .third {
+                @include font-style($f-size: 14px, $l-height: 18px);
+                margin-top: 3px;
+                width: 100%;
+            }    
+
+        }
+    }
+    @else if($type: 'small'){
+        .information-hover {
+            // background: greenyellow;
+            width: 90%;
+            @include flexy($dir: column);
+            display: none;
+            position: absolute;
+            top: 36px;
+            left: 4px;
+            & .button-play-carrousel {
+                @include flexy($align:center);
+                height: 19px;
+                width: 20px;
+                // margin-left: 1px;
+                border: 1px solid #FFFFFF;
+                border-radius: 50%;
+                background-color: rgba(0,0,0,0.51);
+                position: relative;
+                & img[src*=Triangle] {
+                    position: absolute;
+                    left: 5px;
+                    height: 10px;
+                    width: auto;
+    
+                }
+            }
+            & .resumee {
+                @include flexy($align: center);
+                height: 22px;
                 margin-left: 0;
-                // background-color: #606060;
+                // width: 82%;
             }
         }
         @content;
-    }
+    }  
+  
 }
+
+
+
+// ONLY USES ON SECOND CARROUSEL - CONTINUE WATCHING SECTION
+// @mixin carrousel-progess() {
+//     & div {
+//         margin-left: 0;
+//         overflow-x: initial;
+//         @include flexy($just: flex-start, $dir:column);
+//         & .w3-grey {
+//             margin-top: 2.31px;
+//             margin-left: 40px;
+//             // margin-right: 9px;
+//             width: 60%;
+//             height: 4px;
+//             // @include flexy($just: flex-start);
+//             & .w3-red {
+//                 height: 100%;
+//                 width: 30%;
+//                 margin-left: 0;
+//                 // background-color: #606060;
+//             }
+//         }
+//         @content;
+//     }
+// }

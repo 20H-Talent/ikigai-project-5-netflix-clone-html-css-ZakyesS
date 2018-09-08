@@ -38,45 +38,95 @@ nav {
         margin-top: 0.4px;
     }
 }
-.information-hover {
-    & p {
-        @include font-style($color-font: $principal-color-font);
-        
-    }
-    & .first {
-        @include font-style($f-size: 16px, $l-spacing:1.2px, $l-height: 19px);    
-        margin-top: 8px;
-        margin-bottom: 5px;
-    }
-    & .resumee {
-        & .second {
-            @include font-style($f-size: 14px, $l-spacing: 0.3px, $l-height: 17px);
-            margin: 0;
-            width: 49px;
+// @mixin information-hover($type: 'big'){
+//     @if($type == 'big') {
+
+//         .information-hover {
+//             & p {
+//                 @include font-style($color-font: $principal-color-font);
+                
+//             }
+//             & .first {
+//                 @include font-style($f-size: 16px, $l-spacing:1.2px, $l-height: 19px);    
+//                 margin-top: 8px;
+//                 margin-bottom: 5px;
+//             }
+//             & .resumee {
+//                 & .second {
+//                     @include font-style($f-size: 14px, $l-spacing: 0.3px, $l-height: 17px);
+//                     margin: 0;
+//                     width: 49px;
+//                 }
+//                 & #color {
+//                     @include font-style($l-spacing: 0.4px);
+//                     color:#46D36A;
+//                     width: 74px;
+//                     margin-right: 6px;
+//                 } 
+//                 & .resumee-numbers {
+//                     // border: 1px solid blueviolet;
+//                     @include font-style($f-size: 14px, $l-spacing: 0.3px, $l-height: 17px);
+//                     @include flexy($just: center);
+//                     border: 1px solid rgba(255,255,255,0.41);
+//                     height: 17px;
+//                     width: 36px;
+                    
+//                     margin: 0 8px 0 0;
+//                 }   
+//             }
+//             & .third {
+//                 @include font-style($f-size: 14px, $l-height: 18px);
+//                 margin-top: 3px;
+//                 width: 96%;
+//             }    
+//         }
+//     }
+// }
+@include information-hover($type: 'small'){
+    .information-hover {
+        & p {
+            @include font-style($color-font: $principal-color-font);
         }
-        & #color {
-            @include font-style($l-spacing: 0.4px);
-            color:#46D36A;
-            width: 74px;
-            margin-right: 6px;
+        & .first {
+            @include font-style($f-size: 9px, $l-spacing:0.5px, $l-height: 6px);    
+            margin-top: 8px;
+            margin-bottom: 0px;
+        }
+        & .resumee {
+            & .second {
+                @include font-style($f-size: 8px, $l-spacing:0px, $l-height: 6px);    
+                margin-right: 2px;
+                width: 42px;
+
+            }
+            & #color {
+                
+                color:#46D36A;
+                width: 42px;
+                // margin-right: 0px;
+            } 
+            & .resumee-numbers {
+                // border: 1px solid blueviolet;
+                @include font-style($f-size: 8px, $l-spacing:0.5px, $l-height: 6px);    
+                @include flexy($just: center);
+                border: 1px solid rgba(255,255,255,0.41);
+                // height: 10px;
+                padding-top: 4px;
+                width: 19px;                
+                margin: 0 4px 0 0;
+
+            }   
+        }
+        & .third {
+            @include font-style($f-size: 7px, $l-height: 9px, $l-spacing: 0.3px);
+            margin-top: -3px;
+            width: 100%;
+            margin-left: 0;
+
         } 
-        & .resumee-numbers {
-            // border: 1px solid blueviolet;
-            @include font-style($f-size: 14px, $l-spacing: 0.3px, $l-height: 17px);
-            @include flexy($just: center);
-            border: 1px solid rgba(255,255,255,0.41);
-            height: 17px;
-            width: 36px;
-            
-            margin: 0 8px 0 0;
-        }   
-    }
-    & .third {
-        @include font-style($f-size: 14px, $l-height: 18px);
-        margin-top: 3px;
-        width: 96%;
     }
 }
+
 
 // .carrousel-2 {
 //     & h2 {
