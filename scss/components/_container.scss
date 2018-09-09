@@ -72,71 +72,29 @@
     margin-right: 5px;
     position: relative;
     @include information-hover();
-    // la parte de information hover funciona.
-    // & .information-hover {
-    //     width: 90%;
-    //     @include flexy($dir: column);
-    //     display: none;
-    //     position: absolute;
-    //     top: 233px;
-    //     left: 11px;
-    //     & .button-play-carrousel {
-    //         @include flexy($align:center);
-    //         height: 35px;
-    //         width: 35px;
-    //         border: 1px solid #FFFFFF;
-    //         border-radius: 50%;
-    //         background-color: rgba(0,0,0,0.51);
-    //         position: relative;
-    //         & img[src*=Triangle] {
-    //             position: absolute;
-    //             left: 13px;
-    //         }
-    //     }
-    //     & .resumee {
-    //         @include flexy($align: center);
-    //         height: 22px;
-    //         // width: 82%;
-            
-    //     }
-    //     // & .button-play-carrousel,
-    //     // .resumee, 
-    //     // .second,
-    //     // .third {
-    //     //     margin: 3px 0;
-    //     // }
-    // }
 }
 .carrousel-1.type-1 a:hover   {
     position: relative;
     & .information-hover {
-        // position: absolute;
         display: block; 
-        // border: 1px solid green;   
     }   
 }
 .carrousel-2.type-2 {
-    // margin-top: 63px;
     margin-bottom: 41px;
     @include carrousel-simple() {
-        // margin-left: 1px;
-        // @include carrousel-progess() {
-            @include images-carrousel($w: 217px, $h: 121.69px);
-        // }
+        @include images-carrousel($w: 217px, $h: 121.69px);
         & .carrousel-2-container {
             margin-left: 1px;
             margin-right: 5px;
-           @include flexy($dir:column, $align: center);
-           overflow: initial;
+            @include flexy($dir:column, $align: center);
+            overflow: initial;
             & .w3-grey {
-               width: 59.6%;
-               height: 4px;
-               margin-top: 6px;
-            //    margin-left: 44px;
+                width: 59.6%;
+                height: 4px;
+                margin-top: 6px;
                 & .w3-red {
                     width: 29%;
                     height: 4px;
-                    // margin-left: 0;
                 }
             }
         }
@@ -144,17 +102,30 @@
 }
 .carrousel-2.type-2 a {
     @include information-hover($type: 'small');
+    & .button-add {
+        position: absolute;
+        top: 5%;
+        left: 90%;
+        // box-sizing: border-box;
+        @include flexy($just: center);
+        height: 14.5px;
+        width: 14.5px;
+        border-radius: 50%;
+        background: transparent;
+        border: 0.5px solid #FFFFFF;
+        & img {
+            height: 9px;
+        }
+    }
+    
 }
 .carrousel-2.type-2 a:hover {
     position: relative;
     & .information-hover {
-        // position: absolute;
         display: block; 
-        // border: 1px solid green;   
     }   
 }
 .carrousel-1.type-2 {
-    // margin-top: 44px;
     margin-bottom: 48px;
     @include carrousel-simple() {
         margin-left: 2px;
@@ -173,7 +144,6 @@
 
     & .social-links {
         @include flexy($just: space-between);
-        // margin-left: 1px;
         margin-bottom: 13px;
         width: 201px;
         & li:first-child {

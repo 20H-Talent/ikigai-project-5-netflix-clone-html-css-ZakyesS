@@ -38,7 +38,6 @@
     & div {
         @include flexy();
         overflow-x: scroll;
-        // overflow-y: hidden;
         @content;
     }
 }
@@ -48,7 +47,6 @@
 
     @if($type == 'big') {
         .information-hover {
-            // background: red;
             width: 90%;
             @include flexy($dir: column);
             display: none;
@@ -73,7 +71,6 @@
             & .resumee {
                 @include flexy($align: center);
                 height: 22px;
-                // width: 82%;
                 & .second {
                     @include font-style($f-size: 14px, $l-spacing: 0.3px, $l-height: 17px);
                     margin: 0;
@@ -86,7 +83,6 @@
                     margin-right: 6px;
                 } 
                 & .resumee-numbers {
-                    // border: 1px solid blueviolet;
                     @include font-style($f-size: 14px, $l-spacing: 0.3px, $l-height: 17px);
                     @include flexy($just: center);
                     border: 1px solid rgba(255,255,255,0.41);
@@ -115,7 +111,6 @@
     }
     @else if($type: 'small'){
         .information-hover {
-            // background: greenyellow;
             width: 90%;
             @include flexy($dir: column);
             display: none;
@@ -126,7 +121,6 @@
                 @include flexy($align:center);
                 height: 19px;
                 width: 20px;
-                // margin-left: 1px;
                 border: 1px solid #FFFFFF;
                 border-radius: 50%;
                 background-color: rgba(0,0,0,0.51);
@@ -143,36 +137,9 @@
                 @include flexy($align: center);
                 height: 22px;
                 margin-left: 0;
-                // width: 82%;
             }
         }
         @content;
     }  
   
 }
-
-
-
-// ONLY USES ON SECOND CARROUSEL - CONTINUE WATCHING SECTION
-// @mixin carrousel-progess() {
-//     & div {
-//         margin-left: 0;
-//         overflow-x: initial;
-//         @include flexy($just: flex-start, $dir:column);
-//         & .w3-grey {
-//             margin-top: 2.31px;
-//             margin-left: 40px;
-//             // margin-right: 9px;
-//             width: 60%;
-//             height: 4px;
-//             // @include flexy($just: flex-start);
-//             & .w3-red {
-//                 height: 100%;
-//                 width: 30%;
-//                 margin-left: 0;
-//                 // background-color: #606060;
-//             }
-//         }
-//         @content;
-//     }
-// }

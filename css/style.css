@@ -1138,6 +1138,21 @@ nav:hover {
   height: 22px;
   margin-left: 0;
 }
+.carrousel-2.type-2 a .button-add {
+  position: absolute;
+  top: 5%;
+  left: 90%;
+  display: flex;
+  justify-content: center;
+  height: 14.5px;
+  width: 14.5px;
+  border-radius: 50%;
+  background: transparent;
+  border: 0.5px solid #FFFFFF;
+}
+.carrousel-2.type-2 a .button-add img {
+  height: 9px;
+}
 
 .carrousel-2.type-2 a:hover {
   position: relative;
