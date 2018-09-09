@@ -408,20 +408,13 @@ ul {
   list-style: none;
 }
 
-html.debug {
-  background: transparent url(/tmp/00-home-with-hovers.jpg) no-repeat top left;
-  background-size: 100%;
-}
-html.debug body {
-  opacity: 0.3;
+html.index {
+  background: url(/images/pelicula-inocents.svg) no-repeat;
+  background-color: #141414;
 }
 
-html.debug2 {
-  background: transparent url(/tmp/01-search.jpg) no-repeat top left;
-  background-size: 100%;
-}
-html.debug2 body {
-  opacity: 0.7;
+html.search {
+  background-color: #141414;
 }
 
 .serie-description-header h2 {
