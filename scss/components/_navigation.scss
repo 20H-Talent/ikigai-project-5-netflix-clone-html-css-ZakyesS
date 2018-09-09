@@ -1,9 +1,13 @@
 // Navigation:
-
 nav {
+    // z-index: 1;
+    // position: fixed;
+    // top: 0;
+    // left: 0;    
     @include flexy();
     height: 68px;
     & ul {
+        opacity: 0;
         @include flexy($align: center); 
         width: 1171px;
         // margin-top: 0px;
@@ -25,13 +29,17 @@ nav {
         & li:nth-of-type(4) {
             flex-basis: 122px;
         }
-        
     }
     & img {
         margin-right: 38px;
         margin-top: 22px;
     }
+    transition: 5s cubic-bezier(0.11, 0.18, 0, 1.13) 0s; 
+    -webkit-transition: 5s cubic-bezier(0.11, 0.18, 0, 1.13) 0s; 
 }
 nav:hover {
     background-color: #141414;
+    & ul {
+        opacity: 1;
+    }
 }
