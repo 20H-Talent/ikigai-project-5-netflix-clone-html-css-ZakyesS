@@ -47,6 +47,7 @@
 
     @if($type == 'big') {
         .information-hover {
+            transition-delay: 5s;
             width: 90%;
             @include flexy($dir: column);
             display: none;

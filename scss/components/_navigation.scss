@@ -1,13 +1,13 @@
 // Navigation:
 nav {
-    // z-index: 1;
-    // position: fixed;
-    // top: 0;
-    // left: 0;    
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;    
     @include flexy();
     height: 68px;
     & ul {
-        opacity: 0;
+        // opacity: 0;
         @include flexy($align: center); 
         width: 1171px;
         // margin-top: 0px;
