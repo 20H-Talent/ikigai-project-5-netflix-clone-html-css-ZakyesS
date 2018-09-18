@@ -76,6 +76,9 @@
 }
 .carrousel-1.type-1 a:hover   {
     position: relative;
+    & img {
+        opacity: 0.6;
+    }
     & .information-hover {
         display: block; 
     }   
@@ -103,12 +106,13 @@
 }
 .carrousel-2.type-2 a {
     @include information-hover($type: 'small');
+    position: relative;
     & .button-add {
         position: absolute;
         top: 5%;
         left: 90%;
         // box-sizing: border-box;
-        @include flexy($just: center);
+        // @include flexy($just: center);
         height: 14.5px;
         width: 14.5px;
         border-radius: 50%;
@@ -118,11 +122,19 @@
             height: 9px;
             width: 9px;
         }
+        display: none;
     }
     
 }
 .carrousel-2.type-2 a:hover {
     position: relative;
+    & img {
+        opacity: 0.6;
+    }
+    & .button-add {
+        // display: block;
+        @include flexy($just: center);
+    }
     & .information-hover {
         display: block; 
     }   
