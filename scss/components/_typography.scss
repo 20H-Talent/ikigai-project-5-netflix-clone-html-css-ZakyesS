@@ -49,10 +49,11 @@ nav {
             margin-bottom: 0px;
         }
         & .resumee {
+            width: auto;
             & .second {
                 @include font-style($f-size: 8px, $l-spacing:0px, $l-height: 6px);    
                 margin-right: 2px;
-                width: 42px;
+                width: 3em;
 
             }
             & #color {

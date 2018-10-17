@@ -37,7 +37,7 @@
 @mixin carrousel-simple() {
     & div {
         @include flexy();
-        overflow-x: scroll;
+        overflow-x: auto; // This rules made all divs scrolls. Auto, perhaps run better.
         @content;
     }
 }
@@ -48,7 +48,7 @@
     @if($type == 'big') {
         .information-hover {
             transition-delay: 5s;
-            width: 90%;
+            width: auto;
             @include flexy($dir: column);
             display: none;
             position: absolute;
@@ -111,7 +111,7 @@
     }
     @else if($type: 'small'){
         .information-hover {
-            width: 90%;
+            width: auto;
             @include flexy($dir: column);
             display: none;
             position: absolute;
